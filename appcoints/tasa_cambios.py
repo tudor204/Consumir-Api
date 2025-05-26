@@ -19,11 +19,7 @@ while moneda_cripto != "" and moneda_cripto.isalpha() == True:
     else:
         print(respuesta["error"])
 
-        moneda_cripto = input("Ingrese una criptomoneda válida ").upper()
-
-
-
-    
+        moneda_cripto = input("Ingrese una criptomoneda válida ").upper()  
 
 
 
