@@ -27,6 +27,7 @@ class Exchange:
         self.moneda_cripto = cripto
         self.rate = None
         self.status_code = None
+        self.time = None
 
 
     def updateExchange(self,apikey):
@@ -35,6 +36,7 @@ class Exchange:
         self.status_code = r.status_code
         if r.status_code == 200:
             self.rate = respuesta["rate"]
+            self.time = respuesta["time"]
         else:
             raise ModelError(f"status: {r.status_code}, error: {respuesta['error']}")
 

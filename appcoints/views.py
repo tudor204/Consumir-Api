@@ -10,6 +10,7 @@ class Views:
         y la cantidad de no criptos son: {len(listcoin.lista_no_criptos)}")
 
     def viewRateExchange(self,change):
+        print(f"Fecha de cotización: {change.time}")
         print("{:,.2f}€".format(change.rate).replace(",","@").replace(".",",").replace("@","."))
         
     def viewError(self,er):
